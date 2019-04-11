@@ -1,4 +1,6 @@
 import React from "react";
+import Images from "./Images";
+import Icon from "../../src/FactionIcons.json";
 
 const App = ()=>{ 
     return  <div> hello </div>    
