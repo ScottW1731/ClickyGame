@@ -1,9 +1,13 @@
 import React from "react";
 
-const Navbar = ()=>{ 
-    return  <div> hello </div>    
-    // score will go here
-    // win loss will go here
-}
-
-export default Navbar;
+const NavBar = props => {
+    return (
+      <div>
+        <span>Score {props.score}</span>
+        <span>Message {props.message}</span>
+        <span>Top Score{props.topScore}</span>
+      </div>
+    );
+  };
+  
+  export default NavBar;

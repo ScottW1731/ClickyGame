@@ -1,8 +1,19 @@
 import React from "react";
+import Imageid from "./Imageid";
 
-const Imagesbox = ()=>{ 
-    return  <div> hello </div>    
-    // I want The images div/holder to go here
-}
-
-export default Imagesbox;
+const Imagesbox = ({ images, suffleFunction }) => {
+    const renderedId = images.map(image => {
+      return (
+        <Imageid
+          key={image.id}
+          id={image.id}
+          name={image.name}
+          image={image.Icon}
+          suffleFunction={suffleFunction}
+        />
+      );
+    });
+    return <div>{renderedId}</div>;
+  };
+  
+  export default Imagesbox;
