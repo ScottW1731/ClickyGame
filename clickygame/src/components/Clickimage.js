@@ -1,12 +1,13 @@
 import React from "react";
 
-// const Images = ()=>{ 
-//     return (
-//         <img></img>
-//     );
-// }
 
-class Images extends React.Component{
+// function Clock(props) {
+//     return (
+//       <div></div>
+//     );
+//   };
+
+class Clickimage extends React.Component{
     render() {
         return(
             <img></img>
@@ -15,4 +16,4 @@ class Images extends React.Component{
     }
 }
 
-export default Images;
+export default Clickimage;

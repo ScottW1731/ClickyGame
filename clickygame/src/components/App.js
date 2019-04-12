@@ -1,5 +1,8 @@
 import React from "react";
-import Images from "./Images";
+import Directions from "../components/Directions";
+import Images from "../components/Images";
+import Navbar from "../components/Navbar"
+import Imagesbox from "../components/Imagesbox"
 import Icon from "../../src/FactionIcons.json";
 
 const App = ()=>{ 
