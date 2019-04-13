@@ -6,6 +6,7 @@ const NavBar = props => {
         <span>Score {props.score}</span>
         <span>Message {props.message}</span>
         <span>Top Score{props.topScore}</span>
+        <span>{}</span>
       </div>
     );
   };

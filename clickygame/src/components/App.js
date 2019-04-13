@@ -12,7 +12,7 @@ class App extends React.Component{
         score: 0,
         topScore: 0,
         totalScore: 0,
-        message: 'Go Stars!'
+        message: 'start by clicking an image, but no image more than once'
     }
 // game logic here
 // first if statement with! is saying "do not add all Ids"
@@ -22,27 +22,42 @@ class App extends React.Component{
     let clicked = this.state.clicked;
     if(!clicked.includes(id)){
         clicked.push(id);
-        
-    }
-
-    if(clicked.length === 12){
-        this.setState({clicked: []})
-    }
-    if(this.state.score >= this.state.totalScore){
-        this.setState({topScore: this.state.score + 1})
-    }
-
+        if(clicked.length === 12){
+            this.setState({clicked: []})
+        }
+        if(this.state.score >= this.state.totalScore){
+            this.setState({topScore: this.state.score })
+        }
+        this.setState({
+            score: clicked.length,
+            totalScore: this.state.topScore,
+            message: 'WINNER! HIGHSCORE!'
+        });
+        // random position generator
+        let a = Icons.length,
+        j,
+        temp;
+      while (--a > 0) {
+        j = Math.floor(Math.random() * (a + 1));
+        temp = Icons[j];
+        Icons[j] = Icons[a];
+        Icons[a] = temp;
+    } 
+  } else {
+      // this statement 
     this.setState({
-        score: clicked.length,
-        totalScore: this.state.topScore,
-        message: 'You win this round'
-    })
+      clicked: [],
+      score: 0,
+      totalScore: this.state.topScore,
+      message: 'WRONG! WRONG!'
+    });
+  }
     }
 
     render(){
         return (
             <div>
-                <Navbar StarsMessage={this.state.message}/>
+                <Navbar message={this.state.message} score={this.state.score} topScore={this.state.topScore}/>
                 <Directions/>
                 <Imagesbox
                           suffleFunction={this.suffleFunction}
