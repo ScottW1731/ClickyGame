@@ -3,7 +3,7 @@ import Directions from "./Directions.js";
 import Navbar from "./Navbar.js"
 import Imagesbox from "./Imagesbox.js"
 import Icons from "../FactionIcons.json";
-
+// all pages called here
 class App extends React.Component{
     state = {
         //images: FactionIcons.json
