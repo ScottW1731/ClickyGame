@@ -1,11 +1,18 @@
-img {
+.images {
     height: 100px;
     width: 100px;
   }
 .images-container {
-  height: 100px;
-  width: 100px;
+  display: inline-block;
+  float:left;
+  margin: 0px;
+  padding: 0px;
 }
+
+.container{
+    background-color: rgb(255, 0, 0);
+}
+
 /* 
 container images
 imagesbox

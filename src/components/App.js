@@ -59,7 +59,7 @@ class App extends React.Component{
 
     render(){
         return (
-            <div>
+            <div className="container">
                 <Navbar message={this.state.message} score={this.state.score} topScore={this.state.topScore}/>
                 <Directions/>
                 <Imagesbox
