@@ -15,5 +15,9 @@ const Imagesbox = ({ images, suffleFunction }) => {
     });
     return <div>{renderedId}</div>;
   };
+
+  // const Imagesbox = {
+
+  // }
   
   export default Imagesbox;

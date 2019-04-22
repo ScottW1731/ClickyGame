@@ -5,6 +5,7 @@ import Imagesbox from "./Imagesbox.js"
 import Icons from "../FactionIcons.json";
 import "./style.css"
 
+
 // all pages called here
 class App extends React.Component{
     state = {
