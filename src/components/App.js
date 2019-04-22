@@ -3,6 +3,7 @@ import Directions from "./Directions.js";
 import Navbar from "./Navbar.js"
 import Imagesbox from "./Imagesbox.js"
 import Icons from "../FactionIcons.json";
+import "./components/style.css"
 
 // all pages called here
 class App extends React.Component{
