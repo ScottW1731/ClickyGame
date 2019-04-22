@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Beastmen",
+        "Icon": "../pictures/Beastmen.jpg"
+    },
+    {
+        "id": 2,
+        "name": "BorderPrinces",
+        "Icon": "../pictures/BorderPrinces.jpg"
+    },
+    {
+        "id": 3,
+        "name": "DarkElves",
+        "Icon": "../pictures/DarkElves.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Dwarves",
+        "Icon": "../pictures/Dwarves.jpg"
+    },
+    {
+        "id": 5,
+        "name": "HighElves",
+        "Icon": "../pictures/HighElves.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Khorne",
+        "Icon": "../pictures/Khorne.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Lizardmen",
+        "Icon": "../pictures/Lizardmen.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Nurgle",
+        "Icon": "../pictures/Nurgle.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Orks",
+        "Icon": "../pictures/Orks.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Reikland",
+        "Icon": "../pictures/Reikland.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Slannesh",
+        "Icon": "../pictures/Slannesh.jpg"
+    },
+    {
+        "id": 12,
+        "name": "VonCarstein",
+        "Icon": "../pictures/VonCarstein.jpg"
+    }
+]
