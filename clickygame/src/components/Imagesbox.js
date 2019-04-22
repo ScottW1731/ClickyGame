@@ -1,5 +1,5 @@
 import React from "react";
-import Imageid from "./Imageid";
+import Imageid from "./Imageid.js";
 
 const Imagesbox = ({ images, suffleFunction }) => {
     const renderedId = images.map(image => {
