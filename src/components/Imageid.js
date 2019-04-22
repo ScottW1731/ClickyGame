@@ -5,7 +5,7 @@ const ImageIcon = ({ image, name, suffleFunction, id }) => {
   console.log(id)
     return (
       <div>
-        <img src={image} alt={name} onClick={() => suffleFunction(id)} />
+        <img class={icon} src={image} alt={name} onClick={() => suffleFunction(id)} />
       </div>
     );
   };
